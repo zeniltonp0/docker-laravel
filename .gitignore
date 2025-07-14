@@ -1,0 +1,15 @@
+.env
+/vendor
+/node_modules
+/composer.lock
+/storage/*.key
+/bootstrap/cache/*.php
+/public/hot
+/public/storage
+/storage/*.log
+
+# Ignorar diretórios específicos do Docker (se estiverem sendo criados no host e não forem bind mounts controlados)
+# NO SEU CASO: Sua pasta `volume_app` é um bind mount, então ela deve ser versionada.
+#              Sua pasta `mysql_data_volume` (o volume nomeado) não existe no host diretamente.
+#              Se houver alguma pasta gerada localmente pelo Docker que você não queira versionar,
+#              como logs ou caches, adicione aqui.
